@@ -86,7 +86,7 @@ model product {
 /// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
 model review {
   review_id          Int      @id @default(autoincrement())
-  stars_amount       Int?
+  stars       Int?
   review_title       String?  @db.VarChar(100)
   user_id            Int
   product_id         Int
